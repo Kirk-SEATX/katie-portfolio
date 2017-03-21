@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Katherine Sistek</title>
+</head>
+<body>
+    <h1>Katherine Sistek</h1>
+    <h3>ARCHITECTURE//PORTFOLIO</h3>
+    <ul>
+        {% for item in works %}
+            <li>{{item.title}}</li>
+            <img src="{{item.image}}"/>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
